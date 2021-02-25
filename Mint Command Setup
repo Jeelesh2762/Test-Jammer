@@ -1,0 +1,84 @@
+Django :- 
+   
+    python3 manage.py runserver
+    username : jeelesh
+    password : Jeelesh@276
+    
+    user = User(username='Jeel',email='jileshdarji276@gmail.com',password='root')
+    user.full_name = "JeeleshDarji"
+
+    Superuser :-
+        Name :- jeelesh
+        pass :- Jeelesh@276 | jam | empty
+
+Tomcat :-
+    Username : root
+    password : ""(empty)
+
+    Procedure :-
+        go to Documents/Web/Apache-tomcat/bin & fire below commands :
+            sh startup.sh
+            sh shutdown.sh
+            firefox localhost:8080
+
+Password :- 
+    local MYSQL db :-  Jbdarji@276
+    Netbeans Master :- 1234
+
+Start Mysql :
+    sudo mysql -u root -p
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Jeelesh@276';
+    FLUSH PRIVILEGES;
+
+    ALTER USER 'mysql.sys'@'localhost' IDENTIFIED WITH mysql_native_password by 'Jeelesh@276';
+                ---------                              ---------------------
+                    |                                            |
+               change this to any of 5 in list          default is caching_sha2_password except root
+
+Find Java :- 
+    whereis java
+
+Find all Installed Packages : 
+    sudo apt list --installed
+
+For Swappiness :- 
+    Check Value :- cat /proc/sys/vm/swappiness 
+        (default = 60)
+    Change Value :- sudo xed /etc/sysctl.conf
+
+Enable Write cache :
+    setting-->disk--> ... --> change disk setting --> enable cache
+
+xkill :
+    ctrl + esc
+
+Battery : 
+    indicator-cpufreq
+
+Database :
+   Name :- jdbctestdatabase
+   pass :- Cryint@99
+
+Xampp :
+    sudo service apache2 status
+    sudo service apache2 stop
+        -------------
+    sudo service mysql status
+    sudo service mysql stop
+        -------------
+    localhost :  127.0.0.1:80
+        -------------
+    *for any issue :-
+        sudo /etc/init.d/apache2 stop
+
+Bluetooth :
+    DISABLE :-  echo "blacklist btusb" | sudo tee /etc/modprobe.d/blacklist-bluetooth.conf
+    ENABLE  :-  
+            Temporary : sudo modprobe -v btusb
+            permanent : sudo rm -v /etc/modprobe.d/blacklist-bluetooth.conf
+    *for Permanent changes Restart(not for temporary)
+
+Xorg (Restart) :
+    alt + ctrl + backspace
+
+
