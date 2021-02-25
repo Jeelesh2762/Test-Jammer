@@ -81,4 +81,18 @@ Bluetooth :
 Xorg (Restart) :
     alt + ctrl + backspace
 
+Git Maintain
+
+1)--> git init
+2)--> git status 	// Only for Check NOT for really ADD
+// if in status there is any uncommited file commit it First then After you can create any Branch
+3)--> git add <Folder or File name>
+4)--> git commit -m "<message>"
+5)--> git branch <Branch-Name>
+6)--> git checkout <Branch-Name>
+7)--> git branch 	// to check all of the Branch status
+8)--> git log		// for check a log only
+9)--> git remote add origin <link>
+10)--> git push -u origin <Branch Name or Master>// enter username & Password
+
 
